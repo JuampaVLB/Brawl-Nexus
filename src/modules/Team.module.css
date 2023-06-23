@@ -1,0 +1,76 @@
+#container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 4rem;
+    align-items: center;
+    padding: 50px 0;
+}
+
+#container .carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 200px;
+    gap: 3rem;
+}
+
+#container .profile {
+    color: #fff;
+    background-color: #36393F;
+    width: 250px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    display: flex;
+    gap: 2rem;
+    justify-content: left;
+    align-items: center;
+    border-radius: 15px;
+}
+
+#container .profile > div > p {
+    font-size: 1.2rem;
+}
+
+#container .profile_picture {
+    width: 48px;
+    border-radius: 50%;
+}
+
+#container .carousel > p {
+    font-size: 2rem;
+}
+
+/* Class */
+
+.CEO {
+    color: #9b58f1;
+}
+
+.Moderador {
+    color: #e74c3c;
+}
+
+.STAR.GG {
+    color: #e66e6e;
+}
+
+.Caster {
+    color: #1f8b4c;
+}
+
+.Artista {
+    color: #cbe76e;
+}
+
+.Ayudante {
+    color: #f1c40f;
+}
+
+.star {
+    color: #e66e6e;
+}

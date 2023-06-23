@@ -1,0 +1,124 @@
+#nav {
+    position: fixed;
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    z-index: 100;
+}
+
+#nav .flex {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav .navbar {
+    width: 600px;
+    height: 100%;
+    font-size: 1.1rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#nav .logo {
+    width: 200px;
+    margin-right: -5%;
+}
+
+#nav .navbar>li>a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+#nav .navbar>li>a:hover {
+    color: var(--secondary);
+}
+
+#nav .nav_rigth {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 50px;
+    gap: 3rem;
+}
+
+#nav .socials {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 1rem;
+}
+
+#nav .nav_rigth svg {
+    fill: rgba(204, 204, 204, 1);
+    transition: fill 0.3s ease;
+}
+
+#nav .nav_rigth svg:hover {
+    fill: var(--primary);
+}
+
+.btn_login {
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn_login:hover {
+    background-color: var(--secondary);
+}
+
+/* BTN Menu */
+
+.btn {
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    fill: #7a38fe;
+    display: none;
+}
+
+@media (max-width: 1000px) { 
+
+    .btn {
+
+        display: flex;
+    }
+    
+    #nav .navbar {
+        display: none;
+    }
+
+    #nav .navbar > ul {
+        background: purple;
+    }
+
+    #nav .nav_rigth {
+        display: none;
+    }
+
+}

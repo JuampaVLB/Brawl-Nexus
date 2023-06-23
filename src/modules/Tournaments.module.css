@@ -1,0 +1,47 @@
+.container {
+    width: 100%;
+    height: auto;
+    background-color: var(--secondary);
+}
+
+.container .content {
+    gap: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 4rem;
+}
+
+.container .content > svg {
+ margin-bottom: -15rem;
+}
+
+.container .content h2 {
+    font-size: 3rem;
+    white-space: nowrap;
+    color: #fff;
+}
+
+.container .content .calendar {
+    width: 70%;
+    background-color: #fff;
+}
+
+@media (max-width: 950px) {
+
+    .container .content .calendar {
+        width: 95%;
+    }
+
+    .container .content > svg {
+        margin-bottom: -8rem;
+       }
+}
+
+@media (max-width: 450px) {
+    .container .content > svg {
+        margin-bottom: -4rem;
+       }
+}
