@@ -21,7 +21,7 @@
 #container .profile {
     color: #fff;
     background-color: #36393F;
-    width: 250px;
+    width: 300px;
     padding-left: 10px;
     padding-right: 10px;
     height: 100px;
@@ -36,6 +36,10 @@
     font-size: 1.2rem;
 }
 
+#container .profile > div > span {
+    font-weight: bold;
+}
+
 #container .profile_picture {
     width: 48px;
     border-radius: 50%;
@@ -47,7 +51,7 @@
 
 /* Class */
 
-.CEO {
+.Fundador {
     color: #9b58f1;
 }
 

@@ -22,9 +22,9 @@ function Footer() {
           </div>
           <div>
             <span>Informacion</span>
-            <p>Nosotros</p>
-            <p>Blog</p>
-            <p>Faq</p>
+            <p>Discord</p>
+            <p>Youtube</p>
+            <p>Twitch</p>
           </div>
         </div>
       </main>

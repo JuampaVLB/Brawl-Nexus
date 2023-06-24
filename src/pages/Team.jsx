@@ -2,29 +2,32 @@ import { useEffect, useState } from "react";
 
 import styles from "../modules/Team.module.css";
 
-import Logo from "/img/profile.webp";
-
 import Carousel from "@itseasy21/react-elastic-carousel";
 
 function Team() {
   const items = [
-    { id: 1, title: "Roku", role: "CEO" },
-    { id: 2, title: "MolceLancia", role: "CEO" },
-    { id: 3, title: "Neoberlord", role: "CEO" },
-    { id: 4, title: "El Cesarin", role: "Moderador" },
-    { id: 5, title: "AidenWard", role: "Moderador STAR.GG" },
-    { id: 6, title: "Shadowteca", role: "Moderador STAR.GG" },
-    { id: 7, title: "Trimago", role: "Moderador STAR.GG" },
-    { id: 8, title: "R1black", role: "Caster" },
-    { id: 9, title: "Elthazar", role: "Caster" },
-    { id: 10, title: "Kamatari", role: "Caster" },
-    { id: 11, title: "KOR BESTO LEYENDA", role: "Caster" },
-    { id: 12, title: "Lauty", role: "Caster" },
-    { id: 13, title: "MitsuMaig", role: "Caster" },
-    { id: 14, title: "Nevy", role: "Caster" },
-    { id: 15, title: "Wesley1026", role: "Caster" },
-    { id: 16, title: "Nitram", role: "Artista" },
-    { id: 17, title: "Emi#8364", role: "Ayudante" },
+    { id: 1, title: "Roku", role: "Fundador", img: "roku" },
+    { id: 2, title: "MolceLancia", role: "Fundador", img: "molce" },
+    { id: 3, title: "Neoberlord", role: "Fundador", img: "neo" },
+    { id: 4, title: "AidenWard", role: "Mod STAR.GG", img: "aiden" },
+    {
+      id: 5,
+      title: "Shadowteca",
+      role: "Mod STAR.GG",
+      img: "shadowteca",
+    },
+    { id: 6, title: "Trimago", role: "Mod STAR.GG", img: "trimago" },
+    { id: 7, title: "R1black", role: "Caster", img: "riblack" },
+    { id: 8, title: "Elthazar", role: "Caster", img: "elthazar" },
+    { id: 9, title: "Kamatari", role: "Caster", img: "kamatari" },
+    { id: 10, title: "KOR BESTO LEYENDA", role: "Caster", img: "kor" },
+    { id: 11, title: "Lauty", role: "Caster", img: "lauty" },
+    { id: 12, title: "MitsuMaig", role: "Caster", img: "mitsu" },
+    { id: 13, title: "Nevy", role: "Caster", img: "nevy" },
+    { id: 14, title: "Wesley", role: "Caster", img: "wesley" },
+    { id: 15, title: "El Cesarin", role: "Moderador", img: "cesarin" },
+    { id: 16, title: "Nitram", role: "Artista", img: "nitram" },
+    { id: 17, title: "Emi", role: "Ayudante", img: "emi" },
   ];
 
   const getItemsToShow = () => {
@@ -65,7 +68,7 @@ function Team() {
           {items.map((item) => (
             <div key={item.id} className={styles.profile}>
               <img
-                src={Logo}
+                src={`/img/${item.img}.webp`}
                 alt="Profile Picture"
                 className={styles.profile_picture}
               />
@@ -73,7 +76,7 @@ function Team() {
                 <p>{item.title}</p>
                 <span
                   className={
-                    item.role === "Moderador STAR.GG"
+                    item.role === "Mod STAR.GG"
                       ? `${styles[item.role]} ${styles.star}`
                       : styles[item.role]
                   }

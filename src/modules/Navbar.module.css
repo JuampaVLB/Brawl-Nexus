@@ -102,18 +102,43 @@
     display: none;
 }
 
-@media (max-width: 1000px) { 
+@media (max-width: 1000px) {
 
     .btn {
-
         display: flex;
     }
-    
+
+    .btn.active {
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: .5rem;
+    }
+
     #nav .navbar {
+        flex-direction: column;
+        justify-content: space-around;
         display: none;
     }
 
-    #nav .navbar > ul {
+    #nav .navbar.active {
+        display: flex;
+    }
+
+    #nav.active {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    #nav .logo.active {
+        display: none;
+    }
+
+    #nav .navbar>ul {
         background: purple;
     }
 
