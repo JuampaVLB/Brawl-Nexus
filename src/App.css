@@ -5,9 +5,9 @@
 }
 
 :root {
-    --primary: #7a38fe;
-    --secondary: #c0a6f7;
-  }
+  --primary: #7a38fe;
+  --secondary: #c0a6f7;
+}
 
 html {
   scroll-behavior: smooth;

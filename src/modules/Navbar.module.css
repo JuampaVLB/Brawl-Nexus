@@ -1,5 +1,6 @@
 #nav {
     position: fixed;
+    top: 0;
     width: 100%;
     height: 4.5rem;
     display: flex;
@@ -7,6 +8,7 @@
     align-items: center;
     background-color: #fff;
     z-index: 100;
+    margin-bottom: 4.5rem;
 }
 
 #nav .flex {
@@ -102,7 +104,7 @@
     display: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
 
     .btn {
         display: flex;

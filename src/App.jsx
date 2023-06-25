@@ -18,7 +18,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div id="page">
       {loading ? (
         <Loader />
       ) : (
@@ -30,7 +30,7 @@ function App() {
           <Footer />
         </>
       )}
-    </>
+    </div>
   );
 }
 
