@@ -5,6 +5,7 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
+import Card from "../components/Card";
 
 const localizer = momentLocalizer(moment);
 
@@ -26,7 +27,7 @@ function Tournaments() {
   }, []);
 
   const eventStyleGetter = (event) => {
-    const backgroundColor = event.color; // Propiedad "color" del evento
+    const backgroundColor = event.color;
 
     const style = {
       backgroundColor,
@@ -46,6 +47,9 @@ function Tournaments() {
     {
       title: "Next Stage SA 1v1 #11",
       color: "orange",
+      image: "nextstage",
+      prize: 100,
+      region: "BRZ",
       start: new Date(2023, 5, 16, 14, 0), // Fecha y hora de inicio del evento
       end: new Date(2023, 5, 16, 19, 0), // Fecha y hora de fin del evento
     },
@@ -90,6 +94,7 @@ function Tournaments() {
             style={{ height: calendarHeight, color: "#7a38fe" }}
           />
         </div>
+        <Card />
       </div>
     </div>
   );
