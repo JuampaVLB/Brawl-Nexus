@@ -4,7 +4,6 @@ import Logo from "/img/logo.png";
 
 function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
-
   const handleToggleMenu = () => {
     setMenuOpen(!isMenuOpen);
   };

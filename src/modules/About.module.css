@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: space-around;
     gap: 5rem;
+    background-color: #f6f6f6;
 }
 
 .container .section {
