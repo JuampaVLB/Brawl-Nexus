@@ -5,8 +5,13 @@
 }
 
 :root {
-  --primary: #7a38fe;
-  --secondary: #c0a6f7;
+  --primary: #742fff;
+  --secondary: #3e2594;
+  --violet_ligth: #c1a6f8;
+  --dark: #121211;
+  --light_dark: #181819;
+  --red: #ee2044;
+  --yellow: #f6cb5b;
 }
 
 html {

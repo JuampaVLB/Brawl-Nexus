@@ -52,15 +52,11 @@
 /* Class */
 
 .Fundador {
-    color: #9b58f1;
+    color: var(--primary);
 }
 
 .Moderador {
-    color: #e74c3c;
-}
-
-.STAR.GG {
-    color: #e66e6e;
+    color: var(--red);
 }
 
 .Caster {
@@ -72,9 +68,9 @@
 }
 
 .Ayudante {
-    color: #f1c40f;
+    color: var(--yellow);
 }
 
 .star {
-    color: #e66e6e;
+    color: var(--red);
 }
