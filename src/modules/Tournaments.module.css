@@ -1,7 +1,7 @@
 .container {
     width: 100%;
     height: auto;
-    background-color: var(--secondary);
+    background-color: var(--violet_dark);
 }
 
 .container .content {
@@ -27,6 +27,15 @@
 .container .content .calendar {
     width: 70%;
     background-color: #fff;
+    /* border: 2px solid var(--dark); */
+    box-shadow: 5px 5px 10px var(--dark);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.container .content .calendar > * {
+   border: none;
+   outline: none;
 }
 
 @media (max-width: 950px) {

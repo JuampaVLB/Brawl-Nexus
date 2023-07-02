@@ -4,7 +4,6 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
-import "react-big-calendar/lib/css/react-big-calendar.css";
 import Card from "../components/Card";
 
 const localizer = momentLocalizer(moment);
@@ -91,7 +90,7 @@ function Tournaments() {
             endAccessor="end"
             events={events}
             eventPropGetter={eventStyleGetter}
-            style={{ height: calendarHeight, color: "#7a38fe" }}
+            style={{ height: calendarHeight, color: "#121211" }}
           />
         </div>
         <Card />

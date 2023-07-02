@@ -11,7 +11,7 @@ function Card() {
         <p>Jul 14, 2023 7:00pm - 11:00pm</p>
         <p>Prize Pool $100</p>
       </div>
-      <button>Register</button>
+      <button>Registrarse</button>
     </div>
   );
 }
