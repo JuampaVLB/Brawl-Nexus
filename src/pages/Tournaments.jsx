@@ -84,14 +84,19 @@ function Tournaments() {
         <h2>Nuestros Torneos</h2>
 
         <div className={styles.calendar}>
-          <Calendar
+          {/* <Calendar
             localizer={localizer}
             startAccessor="start"
             endAccessor="end"
             events={events}
             eventPropGetter={eventStyleGetter}
             style={{ height: calendarHeight, color: "#121211" }}
-          />
+          /> */}
+          <iframe
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%239E69AF&ctz=America%2FArgentina%2FBuenos_Aires&showTitle=0&showPrint=0&showCalendars=1&hl=es_419&showNav=0&src=anVhbXBhYmxvdmlsbGFsYmFzZWN1bkBnbWFpbC5jb20&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZXMuYXIjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043"
+            width="100%"
+            height="600"
+          ></iframe>
         </div>
         <Card />
       </div>
